@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+%btn-shared:hover {
+  color: red;
+}
+
 .btn {
   &-primary {
     @extend %btn-shared;

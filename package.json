@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass -w scss -o public/css"
+    "scss": "node-sass scss/main.scss public/css/main.css",
+    "scss:watch": "npm run scss -- -w"
   },
   "keywords": [],
   "author": "",
