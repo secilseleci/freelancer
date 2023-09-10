@@ -146,4 +146,6 @@ img {
 
 @media (max-width: 760px) {
   .main-nav__items li:not(:first-child) {
-    display: none; } }
+    display: none; }
+  .main-nav__items li:first-child {
+    display: inline-block; } }

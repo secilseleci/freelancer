@@ -3,4 +3,8 @@
   .main-nav__items li:not(:first-child) {
     display: none;
   }
+
+  .main-nav__items li:first-child {
+    display: inline-block;
+  }
 }
