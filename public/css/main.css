@@ -1,0 +1,149 @@
+.container {
+  margin: auto;
+  padding: 0 1.4rem; }
+
+.btn-primary,
+.btn-light,
+.btn-dark {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  transition: all 5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-primary:hover, .btn-light:hover, .btn-dark:hover {
+  color: red; }
+
+.btn-primary {
+  color: #333;
+  background-color: #ef6d6d; }
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4; }
+
+.btn-dark {
+  color: #fff;
+  background-color: #333; }
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+button[input^="btn-"]:hover {
+  background-color: #ef6d6d; }
+
+.bg-primary {
+  background-color: #ef6d6d; }
+
+.bg-light {
+  background-color: #f4f4f4; }
+
+.bg-dark {
+  background-color: #333; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.px-1 {
+  padding: 0 1rem; }
+
+.px-2 {
+  padding: 0 2rem; }
+
+.px-3 {
+  padding: 0 3rem; }
+
+.px-4 {
+  padding: 0 4rem; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+.mx-1 {
+  margin: 0 1rem; }
+
+.mx-2 {
+  margin: 0 2rem; }
+
+.mx-3 {
+  margin: 0 3rem; }
+
+.mx-4 {
+  margin: 0 4rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: white;
+  font-family: "PT Sans", sans-serif;
+  line-height: 1.5; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+ul {
+  list-style: none; }
+
+img {
+  width: 100%; }
+
+.main-nav {
+  display: flex;
+  justify-content: space-between; }
+  .main-nav__logo {
+    width: 80px;
+    height: 80px; }
+  .main-nav__items {
+    display: flex; }
+    .main-nav__items li {
+      padding: 1rem 1.5rem; }
+      .main-nav__items li:first-child {
+        display: none; }
+      .main-nav__items li a {
+        font-weight: 1.2rem;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        transition: border-bottom 2s;
+        padding-bottom: 1rem; }
+        .main-nav__items li a:hover {
+          border-color: #ccc; }
+        .main-nav__items li a.active {
+          border-color: #ef6d6d; }
+
+#header__home {
+  background-image: url(../img/bg.jpeg);
+  height: 100vh;
+  width: 100%;
+  color: white; }
+  #header__home .header-content {
+    text-align: center;
+    padding-top: 30%; }
+  #header__home h1 {
+    font-size: 4rem;
+    line-height: 1.2; }
+
+@media (max-width: 760px) {
+  .main-nav__items li:not(:first-child) {
+    display: none; } }
