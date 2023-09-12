@@ -88,6 +88,39 @@ button[input^="btn-"]:hover {
 .mx-4 {
   margin: 0 4rem; }
 
+.section-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 2rem auto; }
+
+.text-center {
+  text-align: center; }
+
+.border-bottom {
+  text-align: center;
+  height: 3px;
+  width: 3rem;
+  background-color: #ef6d6d;
+  margin: 1rem auto 2rem auto; }
+
+.lead {
+  word-spacing: 0.6rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 3rem auto;
+  padding: 2rem; }
+
+.skill-title {
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold; }
+
+.skill-text {
+  font-size: 1rem;
+  padding: 1rem auto;
+  margin-bottom: 3rem;
+  font-weight: bold; }
+
 * {
   margin: 0;
   padding: 0;
@@ -144,8 +177,19 @@ img {
     font-size: 4rem;
     line-height: 1.2; }
 
+#home__a .skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem; }
+  #home__a .skills i {
+    color: #ef6d6d; }
+
 @media (max-width: 760px) {
   .main-nav__items li:not(:first-child) {
     display: none; }
   .main-nav__items li:first-child {
-    display: inline-block; } }
+    display: inline-block; }
+  #home__a .skills {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr); } }
