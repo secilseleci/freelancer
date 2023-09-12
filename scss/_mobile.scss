@@ -1,5 +1,10 @@
 // home__header
 @media (max-width: 760px) {
+  .container {
+    padding: 0;
+    width: 100%;
+  }
+
   .main-nav__items li:not(:first-child) {
     display: none;
   }
@@ -8,9 +13,34 @@
     display: inline-block;
   }
   // section a
-  #home__a .skills {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+  #home {
+    &__a {
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+      }
+      .lead {
+        word-spacing: 0.6rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 0;
+        padding: auto 1rem;
+      }
+
+      .skill-text {
+        padding: 1rem;
+      }
+    }
+  }
+  // section b
+  #home {
+    &__b {
+      .box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+      }
+    }
   }
 }

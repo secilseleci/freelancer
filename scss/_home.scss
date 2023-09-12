@@ -64,4 +64,36 @@
       }
     }
   }
+
+  &__b {
+    .box {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-bottom: 3rem;
+
+      div {
+        padding: 3rem 0;
+
+        &:nth-child(odd) {
+          background-color: $light-color;
+        }
+
+        &:nth-child(even) {
+          background-color: $medium-color;
+        }
+      }
+
+      & i {
+        color: $primary-color;
+        padding-bottom: 1rem;
+      }
+      .title {
+        font-size: 1.1rem;
+        padding: 1rem auto;
+      }
+      .number {
+        font-size: 2rem;
+      }
+    }
+  }
 }

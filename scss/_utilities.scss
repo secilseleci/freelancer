@@ -145,7 +145,7 @@ button[input^="btn-"]:hover {
   font-size: 1.3rem;
   font-weight: bold;
   margin: 3rem auto;
-  padding: 2rem;
+  padding: 1.5rem 6rem;
 }
 
 .skill-title {
@@ -159,4 +159,8 @@ button[input^="btn-"]:hover {
   padding: 1rem auto;
   margin-bottom: 3rem;
   font-weight: bold;
+}
+
+.container {
+  padding: 0 10rem;
 }
