@@ -96,4 +96,49 @@
       }
     }
   }
+
+  &__c {
+    .item-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+
+      & div {
+        font-weight: bold;
+        margin-bottom: 3rem;
+        font-size: 1rem;
+        & .title {
+          font-size: 1.3rem;
+        }
+      }
+      & i {
+        color: white;
+        position: relative;
+        background-color: black;
+        border-radius: 50%;
+        padding: 2rem;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        transition: 1s all;
+
+        &:hover {
+          background-color: $primary-color;
+          & .step-number {
+            background-color: black;
+          }
+        }
+
+        & .step-number {
+          color: white;
+          padding: 0.8rem;
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-size: 2rem;
+          border-radius: 50%;
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
 }
