@@ -239,6 +239,31 @@ img {
       border-radius: 50%;
       background-color: #ef6d6d; }
 
+.footer {
+  background-color: black;
+  color: white;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer .social-media-icons {
+    display: flex;
+    color: white;
+    padding: 4rem; }
+    .footer .social-media-icons i {
+      margin-right: 1rem;
+      font-size: 2rem;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      text-align: center;
+      padding: 0.6rem; }
+      .footer .social-media-icons i:hover {
+        background-color: #ef6d6d;
+        transition: all 1s;
+        color: black; }
+  .footer .text {
+    padding: 4rem; }
+
 @media (max-width: 760px) {
   .container {
     padding: 0;
@@ -271,4 +296,16 @@ img {
       padding: 0 1rem; }
     #home__c .item-steps .title {
       padding: 0 1rem;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+  .footer {
+    height: 9rem;
+    flex-direction: column;
+    justify-content: center; }
+    .footer .social-media-icons {
+      padding: 2rem; }
+      .footer .social-media-icons i {
+        margin-right: 1rem;
+        font-size: 1.5rem;
+        padding: 0.4rem; }
+    .footer .text {
+      padding: 1.4rem; } }

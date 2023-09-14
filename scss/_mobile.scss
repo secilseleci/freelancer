@@ -63,4 +63,26 @@
       }
     }
   }
+
+  // home-footer
+
+  .footer {
+    height: 9rem;
+    flex-direction: column;
+    justify-content: center;
+
+    & .social-media-icons {
+      padding: 2rem;
+
+      & i {
+        margin-right: 1rem;
+        font-size: 1.5rem;
+        padding: 0.4rem;
+      }
+    }
+
+    & .text {
+      padding: 1.4rem;
+    }
+  }
 }
