@@ -1,3 +1,22 @@
+#header__home {
+  background-image: url(../img/bg.jpeg);
+  height: 100vh;
+  width: 100%;
+  color: white; }
+  #header__home .header-content {
+    text-align: center;
+    padding-top: 30%; }
+  #header__home h1 {
+    font-size: 4rem;
+    line-height: 1.2; }
+
+#header__inner {
+  background-color: #ccc;
+  border-bottom: 2px solid #ef6d6d;
+  height: 5.5rem;
+  width: 100%;
+  color: white; }
+
 .container {
   margin: auto;
   padding: 0 1.4rem; }
@@ -168,18 +187,6 @@ img {
         .main-nav__items li a.active {
           border-color: #ef6d6d; }
 
-#header__home {
-  background-image: url(../img/bg.jpeg);
-  height: 100vh;
-  width: 100%;
-  color: white; }
-  #header__home .header-content {
-    text-align: center;
-    padding-top: 30%; }
-  #header__home h1 {
-    font-size: 4rem;
-    line-height: 1.2; }
-
 #home__a .skills {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -309,3 +316,30 @@ img {
         padding: 0.4rem; }
     .footer .text {
       padding: 1.4rem; } }
+
+#about__a .info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem; }
+  #about__a .info .info-img {
+    border: 2px solid #f4f4f4;
+    padding: 1rem;
+    border-radius: 4px; }
+
+#about__a .info__bio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem; }
+
+#about__b {
+  color: white; }
+  #about__b .progress-bar h4 {
+    padding: 0.4rem; }
+  #about__b .progress-bar .progress {
+    border-radius: 5px;
+    background-color: #ccc;
+    height: 20px;
+    margin-bottom: 0.8rem; }
+    #about__b .progress-bar .progress div {
+      background-color: #ef6d6d;
+      height: 100%; }
