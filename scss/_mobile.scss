@@ -85,16 +85,15 @@
       padding: 1.4rem;
     }
   }
-}
 
-// about page responsive settings
-@media (max-width: 560px) {
+  // about page responsive settings
+
   #about {
     &__a {
       .info {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
+        grid-template-rows: repeat(2, 1fr);
         .info-img {
           border: 2px solid $light-color;
           padding: 1rem;
@@ -106,6 +105,16 @@
         font-weight: bold;
         padding: 0.5rem;
       }
+    }
+  }
+
+  // project page responsive details
+
+  #projects &__a {
+    .items {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0.1rem;
     }
   }
 }
