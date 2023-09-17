@@ -343,3 +343,29 @@ img {
     #about__b .progress-bar .progress div {
       background-color: #ef6d6d;
       height: 100%; }
+
+#about__c .logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem; }
+  #about__c .logos .logo {
+    width: 9rem;
+    height: 8rem;
+    padding: 2rem; }
+
+#about__d .references ul {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center; }
+
+#about__d .references p {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem; }
+
+#about__d .references img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; }
