@@ -271,7 +271,7 @@ img {
   .footer .text {
     padding: 4rem; }
 
-@media (max-width: 760px) {
+@media (max-width: 560px) {
   .container {
     padding: 0;
     width: 100%; }
@@ -316,6 +316,19 @@ img {
         padding: 0.4rem; }
     .footer .text {
       padding: 1.4rem; } }
+
+@media (max-width: 560px) {
+  #about__a .info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+    #about__a .info .info-img {
+      border: 2px solid #f4f4f4;
+      padding: 1rem;
+      border-radius: 4px; }
+  #about__a .info__bio {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem; } }
 
 #about__a .info {
   display: grid;

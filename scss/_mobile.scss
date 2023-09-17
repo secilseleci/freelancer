@@ -1,5 +1,5 @@
-// home__header
-@media (max-width: 760px) {
+// home page responsive settings
+@media (max-width: 560px) {
   .container {
     padding: 0;
     width: 100%;
@@ -83,6 +83,29 @@
 
     & .text {
       padding: 1.4rem;
+    }
+  }
+}
+
+// about page responsive settings
+@media (max-width: 560px) {
+  #about {
+    &__a {
+      .info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        .info-img {
+          border: 2px solid $light-color;
+          padding: 1rem;
+          border-radius: 4px;
+        }
+      }
+      .info__bio {
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.5rem;
+      }
     }
   }
 }
