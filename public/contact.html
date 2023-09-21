@@ -29,9 +29,6 @@
         <nav class="main-nav">
           <img class="main-nav__logo" src="img/logo.png" alt="" />
           <ul class="main-nav__items">
-            <li>
-              <a href=""><i class="fa-solid fa-bars"></i></a>
-            </li>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -50,18 +47,41 @@
           Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing.dolor
           commodi?
         </div>
-
-        <div class="table">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="E-mail Adress" />
-          <input type="text" placeholder="Subject" />
-          <input type="text" placeholder="Phone Number" />
-          <input
-            class="enter-message"
-            type="text"
-            placeholder="Enter message" />
-          <button class="btn-dark">Submit</button>
-        </div>
+        <form action="">
+          <div class="form-field">
+            <input
+              type="text"
+              class="name input"
+              placeholder="name"
+              name="fullname"
+              id="fullname" />
+            <input
+              type="text"
+              class="e-mail input"
+              placeholder="e-mail adress"
+              name="e-mail"
+              id="e-mail" />
+            <input
+              type="text"
+              class="subject input"
+              placeholder="subject"
+              name="subject"
+              id="subject" />
+            <input
+              type="text"
+              id="phone"
+              class="phone input"
+              placeholder="phone number"
+              name="phone" />
+            <input
+              type="text"
+              class="message input"
+              placeholder="enter message"
+              id="message"
+              name="message" />
+            <button class="button btn-dark">Submit</button>
+          </div>
+        </form>
       </div>
 
       <div class="contact-items">
@@ -84,16 +104,16 @@
     </section>
 
     <!-- footer -->
-    <footer>
-      <div class="footer">
+    <div id="main__footer">
+      <div class="footer-content">
         <div class="text">Copyright © 2025. All Rights Reserved..</div>
-        <div class="social-media-icons">
+        <div class="social">
           <i class="fab fa-facebook"></i>
           <i class="fab fa-twitter"></i>
           <i class="fab fa-youtube"></i>
           <i class="fab fa-instagram"></i>
         </div>
       </div>
-    </footer>
+    </div>
   </body>
 </html>

@@ -1,33 +1,29 @@
 // home footer
-.footer {
+#main__footer {
   background-color: black;
   color: white;
-  height: 6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 5rem;
+  padding: 0 1rem;
 
-  & .social-media-icons {
+  .footer-content {
     display: flex;
-    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
 
-    & i {
+    & .social .fab {
       margin-right: 1rem;
-      font-size: 2rem;
       border: 2px solid #fff;
       border-radius: 50%;
+      color: white;
       text-align: center;
       padding: 0.6rem;
+      transition: all 1s;
 
       &:hover {
         background-color: $primary-color;
-        transition: all 1s;
         color: black;
       }
     }
-  }
-
-  & .text {
-    padding: 4rem;
   }
 }

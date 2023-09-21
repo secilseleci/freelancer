@@ -1,5 +1,5 @@
 #header__home {
-  background-image: url(../img/bg.jpeg);
+  background: url(../img/bg.jpeg) no-repeat center right/cover;
   height: 100vh;
   width: 100%;
   color: white; }
@@ -13,7 +13,7 @@
 #header__inner {
   background-color: #ccc;
   border-bottom: 2px solid #ef6d6d;
-  height: 5.5rem;
+  height: 7.5rem;
   width: 100%;
   color: white; }
 
@@ -173,8 +173,6 @@ img {
     display: flex; }
     .main-nav__items li {
       padding: 1rem 1.5rem; }
-      .main-nav__items li:first-child {
-        display: none; }
       .main-nav__items li a {
         font-weight: 1.2rem;
         color: #fff;
@@ -246,91 +244,88 @@ img {
       border-radius: 50%;
       background-color: #ef6d6d; }
 
-.footer {
+#main__footer {
   background-color: black;
   color: white;
-  height: 6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .footer .social-media-icons {
+  height: 5rem;
+  padding: 0 1rem; }
+  #main__footer .footer-content {
     display: flex;
-    color: white; }
-    .footer .social-media-icons i {
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem; }
+    #main__footer .footer-content .social .fab {
       margin-right: 1rem;
-      font-size: 2rem;
       border: 2px solid #fff;
       border-radius: 50%;
+      color: white;
       text-align: center;
-      padding: 0.6rem; }
-      .footer .social-media-icons i:hover {
+      padding: 0.6rem;
+      transition: all 1s; }
+      #main__footer .footer-content .social .fab:hover {
         background-color: #ef6d6d;
-        transition: all 1s;
         color: black; }
-  .footer .text {
-    padding: 4rem; }
 
-@media (max-width: 560px) {
+@media (max-width: 768px) {
   .container {
-    padding: 0;
-    width: 100%; }
-  .main-nav__items li:not(:first-child) {
-    display: none; }
-  .main-nav__items li:first-child {
-    display: inline-block; }
-  #home__a .skills {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr); }
-  #home__a .lead {
-    word-spacing: 0.6rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin: 0;
-    padding: auto 1rem; }
-  #home__a .skill-text {
     padding: 1rem; }
+  #header__home {
+    height: 30rem; }
+    #header__home .header-content {
+      padding-top: 7rem; }
+    #header__home h1 {
+      font-size: 2.6rem;
+      line-height: 1.5; }
   #home__b .box {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr); }
+    grid-template-columns: repeat(2, 1fr); }
   #home__c .item-steps {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr); }
-    #home__c .item-steps .text {
-      padding: 0 1rem; }
-    #home__c .item-steps .title {
-      padding: 0 1rem;
-      margin-bottom: 1rem; }
-  .footer {
-    height: 9rem;
+    grid-template-columns: repeat(2, 1fr); }
+  #projects__a .container .items {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 576px) {
+  .lead {
+    padding: 0; }
+  .container {
+    margin: auto;
+    padding: 1rem; }
+  #header__home {
+    height: 10rem;
+    background-position: 20% 30%; }
+    #header__home .header-content {
+      display: none; }
+  #header__inner {
+    height: 13rem; }
+  .main-nav {
     flex-direction: column;
-    justify-content: center; }
-    .footer .social-media-icons {
-      padding: 2rem; }
-      .footer .social-media-icons i {
-        margin-right: 1rem;
-        font-size: 1.5rem;
-        padding: 0.4rem; }
-    .footer .text {
-      padding: 1.4rem; }
-  #about__a .info {
-    display: grid;
+    align-items: center; }
+    .main-nav li {
+      padding: 1rem; }
+  #home__a .skills {
+    grid-template-columns: repeat(1, 1fr); }
+  #home__b .box {
+    grid-template-columns: repeat(1, 1fr); }
+  #home__c .item-steps {
+    grid-template-columns: repeat(1, 1fr); }
+  #main__footer {
+    height: 8rem;
+    padding: 1rem; }
+    #main__footer .footer-content {
+      flex-direction: column;
+      height: 5rem; }
+  #about__a .container .info {
+    grid-template-columns: repeat(1, 1fr); }
+  #about__c .container .logos {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr); }
-    #about__a .info .info-img {
-      border: 2px solid #f4f4f4;
-      padding: 1rem;
-      border-radius: 4px; }
-  #about__a .info__bio {
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 0.5rem; }
-  #projects __a .items {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 0.1rem; } }
+    gap: 0;
+    margin-bottom: 1rem; }
+    #about__c .container .logos .logo {
+      width: 100%; }
+  #projects__a .container .items {
+    grid-template-columns: repeat(1, 1fr); }
+  #contact__a .container .form-field {
+    grid-template-areas: "name " "subject" "e-mail " "phone" "message " "button ";
+    gap: 1rem; } }
 
 #about__a .info {
   display: grid;
@@ -385,32 +380,32 @@ img {
   height: 50px;
   border-radius: 50%; }
 
-#contact__a .table {
+#contact__a .form-field {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem; }
-  #contact__a .table .enter-message {
-    grid-row: 3 / span 2;
-    grid-column: 1 / span 2;
-    padding: 3rem 1rem; }
-  #contact__a .table input {
-    padding: 1rem; }
-  #contact__a .table button {
-    grid-row: 6 / span 1;
-    grid-column: 1 / span 2;
-    font-weight: bold; }
+  gap: 1rem;
+  grid-template-areas: "name subject" "e-mail phone" "message message" "button button"; }
 
-#contact__a .contact-items {
-  margin-top: 3rem;
-  color: #fff;
-  background-color: #ef6d6d;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-  padding: 3rem; }
+#contact__a .name {
+  grid-area: name; }
 
-body {
-  height: 100vh; }
+#contact__a .e-mail {
+  grid-area: e-mail; }
+
+#contact__a .phone {
+  grid-area: phone; }
+
+#contact__a .subject {
+  grid-area: subject; }
+
+#contact__a .message {
+  grid-area: message;
+  height: 5rem; }
+
+#contact__a .button {
+  grid-area: button; }
+
+#contact__a .input {
+  padding: 0.6rem 0 0.6rem 0.2rem; }
 
 .items {
   display: grid;

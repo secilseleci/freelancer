@@ -1,120 +1,131 @@
-// home page responsive settings
-@media (max-width: 560px) {
+// tables
+@media (max-width: 768px) {
   .container {
+    padding: 1rem;
+  }
+  #header {
+    &__home {
+      height: 30rem;
+
+      .header-content {
+        padding-top: 7rem;
+      }
+      h1 {
+        font-size: 2.6rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  #home__b {
+    .box {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  #home__c {
+    .item-steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  #projects__a .container .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// mobile
+@media (max-width: 576px) {
+  .lead {
     padding: 0;
-    width: 100%;
   }
-
-  .main-nav__items li:not(:first-child) {
-    display: none;
+  .container {
+    margin: auto;
+    padding: 1rem;
   }
-
-  .main-nav__items li:first-child {
-    display: inline-block;
-  }
-  // section a
-  #home {
-    &__a {
-      .skills {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-      }
-      .lead {
-        word-spacing: 0.6rem;
-        font-size: 1.3rem;
-        font-weight: bold;
-        margin: 0;
-        padding: auto 1rem;
-      }
-
-      .skill-text {
-        padding: 1rem;
+  #header {
+    &__home {
+      height: 10rem;
+      background-position: 20% 30%;
+      .header-content {
+        display: none;
       }
     }
-  }
-  // section b
-  #home {
-    &__b {
-      .box {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-      }
+    &__inner {
+      height: 13rem;
     }
   }
 
-  // section c
-  #home {
-    &__c {
-      .item-steps {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-
-        & .text {
-          padding: 0 1rem;
-        }
-
-        & .title {
-          padding: 0 1rem;
-          margin-bottom: 1rem;
-        }
-      }
-    }
-  }
-
-  // home-footer
-
-  .footer {
-    height: 9rem;
+  .main-nav {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 
-    & .social-media-icons {
-      padding: 2rem;
-
-      & i {
-        margin-right: 1rem;
-        font-size: 1.5rem;
-        padding: 0.4rem;
-      }
+    li {
+      padding: 1rem;
     }
-
-    & .text {
-      padding: 1.4rem;
+  }
+  #home__a {
+    .skills {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 
-  // about page responsive settings
+  #home__b {
+    .box {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  #home__c {
+    .item-steps {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  #main__footer {
+    height: 8rem;
+    padding: 1rem;
+    .footer-content {
+      flex-direction: column;
+      height: 5rem;
+    }
+  }
 
   #about {
     &__a {
-      .info {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        .info-img {
-          border: 2px solid $light-color;
-          padding: 1rem;
-          border-radius: 4px;
+      .container {
+        .info {
+          grid-template-columns: repeat(1, 1fr);
         }
       }
-      .info__bio {
-        font-size: 1rem;
-        font-weight: bold;
-        padding: 0.5rem;
+    }
+
+    &__c {
+      .container {
+        .logos {
+          grid-template-columns: repeat(1, 1fr);
+          gap: 0;
+          margin-bottom: 1rem;
+          .logo {
+            width: 100%;
+          }
+        }
       }
     }
   }
+  #projects__a .container .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-  // project page responsive details
-
-  #projects &__a {
-    .items {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 0.1rem;
+  #contact__a {
+    .container {
+      .form-field {
+        grid-template-areas:
+          "name "
+          "subject"
+          "e-mail "
+          "phone"
+          "message "
+          "button ";
+        gap: 1rem;
+      }
     }
   }
 }
