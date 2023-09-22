@@ -325,7 +325,16 @@ img {
     grid-template-columns: repeat(1, 1fr); }
   #contact__a .container .form-field {
     grid-template-areas: "name " "subject" "e-mail " "phone" "message " "button ";
-    gap: 1rem; } }
+    gap: 1rem; }
+  #contact__a .contact-items {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    background-color: #ef6d6d;
+    color: white; }
+    #contact__a .contact-items .box {
+      padding: 2rem 0;
+      margin: 1rem 3rem; } }
 
 #about__a .info {
   display: grid;
@@ -406,6 +415,16 @@ img {
 
 #contact__a .input {
   padding: 0.6rem 0 0.6rem 0.2rem; }
+
+#contact__a .contact-items {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 3rem;
+  background-color: #ef6d6d;
+  color: white; }
+  #contact__a .contact-items .box {
+    padding: 0 2rem;
+    margin: 1rem 3rem; }
 
 .items {
   display: grid;

@@ -127,5 +127,17 @@
         gap: 1rem;
       }
     }
+
+    .contact-items {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 3rem;
+      background-color: $primary-color;
+      color: white;
+      .box {
+        padding: 2rem 0;
+        margin: 1rem 3rem;
+      }
+    }
   }
 }
